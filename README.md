@@ -2,8 +2,6 @@
 
 This is a simple Typescript Skeleton/Boilerplate project to help you get started with Express in a few minutes.
 
-
-
 ## Quick Start
 
 ### Start Dev!
