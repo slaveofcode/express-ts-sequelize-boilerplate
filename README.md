@@ -90,6 +90,18 @@ See the example of using models on `src/controllers/UserController.ts' for faste
   > npm run run:seed:undo:all
 
 
+## Code Generator
+
+This project shipped with a simple code generator borrows from `hyphen`. Some templates already setup on `bootstrap/generator` for initial project.
+
+Example Command
+
+> node ./gen.js controller new Auth --endpoint_base api/auth
+
+The command above will generate new controller file called `AuthController.ts` with setup api endpoint to `api/auth`.
+
+You can create more template like this with different options and purpose to boost up the productivity. See the template example on `generator/controller/new` directory and visit [http://www.hygen.io/generators](http://www.hygen.io/generators) for further possibility.
+
 # License
 
 This project is licensed under the MIT License 
