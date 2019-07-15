@@ -1,4 +1,4 @@
-# Express Ts Boilerplate
+# Express Ts Sequelize Boilerplate
 
 This is a simple Typescript Skeleton/Boilerplate project to help you get started with Express in a few minutes.
 
