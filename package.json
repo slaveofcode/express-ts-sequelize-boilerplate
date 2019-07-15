@@ -16,7 +16,11 @@
     "new:seed": "sequelize seed:generate --name",
     "run:migration": "sequelize db:migrate",
     "run:migration:undo": "sequelize db:migrate:undo",
-    "run:migration:undo-until": "sequelize db:migrate:undo:all --to"
+    "run:migration:undo-all": "sequelize db:migrate:undo:all",
+    "run:migration:undo-until": "sequelize db:migrate:undo:all --to",
+    "run:seed": "sequelize db:seed",
+    "run:seed:undo": "sequelize db:seed:undo",
+    "run:seed:undo:all": "sequelize db:seed:undo:all"
   },
   "repository": {
     "type": "git",

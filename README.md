@@ -40,6 +40,55 @@ This project already supplied with some basic Exception class, see `src/exceptio
 
 Middlewares are placed into `src/interfaces` directory, everything about interface should be dropped here.
 
+## SequelizeJs Integration
+
+Interact with database using SequelizeJs through typescript decorator via [sequelize-typescript](https://github.com/RobinBuschmann/sequelize-typescript).
+
+Migrations & Seeders are defined on `bootstrap/sequelize` folder, and models are placed on `src/repositories/pg/models`. 
+
+See the example of using models on `src/controllers/UserController.ts' for faster adaptation.
+
+### Migration Commands
+
+- `new:migration`: Create new migration 
+
+  > npm run new:migration 'create-table-user'
+
+- `new:seed`: Create new seeders
+
+  > npm run new:seed 'initialize-user-admin'
+
+- `run:migration`: Running existing migrations
+
+  > npm run run:migration
+
+- `run:migration:undo`: Undo the migration one-step 
+
+  > npm run run:migration:undo
+
+- `run:migration:undo-all`: Undo all the migrations
+
+  > npm run run:migration:undo:all
+
+- `run:migration:undo-until <migration-file>`: Undo all the migrations until specific migration target
+
+  > npm run run:migration:undo-until 20190715055658-create-user-table
+
+
+### Seeds Commands
+
+- `run:seed`: Create new seeder
+
+  > npm run run:seed
+
+- `run:seed:undo`: Undo the seeds one-step
+
+  > npm run run:seed:undo
+
+- `run:seed:undo:all`: Undo all the seeds
+
+  > npm run run:seed:undo:all
+
 
 # License
 
