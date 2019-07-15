@@ -1,0 +1,27 @@
+{
+  "development": {
+    "username": "avd",
+    "password": "avd",
+    "database": "tada_auth",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "timezone": "+07:00"
+  },
+  "test": {
+    "username": "avd",
+    "password": "avd",
+    "database": "tada_auth_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "timezone": "+07:00"
+  },
+  "production": {
+    "use_env_variable": "PG_URL",
+    "dialect": "postgres",
+    "timezone": "+07:00",
+    "pool": {
+			"maxConnections": 5,
+			"maxIdleTime": 3000
+		}
+  }
+}

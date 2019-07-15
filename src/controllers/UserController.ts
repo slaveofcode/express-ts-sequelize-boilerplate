@@ -3,6 +3,7 @@ import { Controller, Middleware, Get, Post, Put, Delete } from '@overnightjs/cor
 import { Request, Response, NextFunction } from 'express';
 import PageNotFound from '../exceptions/PageNotFound';
 import BadRequest from '../exceptions/BadRequest';
+import { User } from '../repositories/pg';
 
 @Controller('api/users')
 export class UserController {
@@ -13,20 +14,21 @@ export class UserController {
   }
 
   @Get(':id')
-  private get(req: Request, res: Response) {
-    return res.status(OK).json({
-      status: 'Called',
-      config: this.config,
-    });
-  }
-
-  @Get('detail/info')
-  private detailInfo(req: Request, res: Response) {
-    return res.status(OK).json({
-      detail: {
-        name: 'Aditya',
+  private async get(req: Request, res: Response) {
+    const user = await User.findOne({
+      where: {
+        id: req.params.id,
       },
     });
+    return res.status(OK).json(user);
+  }
+
+  @Get('')
+  private async list(req: Request, res: Response) {
+    const users = await User.findAll({
+      raw: true,
+    });
+    return res.status(OK).json(users);
   }
 
   @Get('tobe/404')
