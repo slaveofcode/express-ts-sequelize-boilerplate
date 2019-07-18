@@ -41,6 +41,8 @@
     "sequelize-typescript": "^1.0.0-beta.3"
   },
   "devDependencies": {
+    "@ef-carbon/tspm": "^2.2.5",
+    "@types/bcrypt": "^3.0.0",
     "@types/bluebird": "^3.5.27",
     "@types/compression": "0.0.36",
     "@types/dotenv": "^6.1.1",

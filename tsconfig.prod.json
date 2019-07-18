@@ -1,7 +1,17 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "sourceMap": false
+    "sourceMap": false,
+    "baseUrl": "./src",                       /* Base directory to resolve non-absolute module names. */
+    "paths": {
+      "@controllers/*": [ "controllers/*" ],
+      "@middlewares/*": [ "middlewares/*" ],
+      "@interfaces/*": [ "interfaces/*" ],
+      "@exceptions/*": [ "exceptions/*" ],
+      "@repositories/*": [ "repositories/*" ],
+      "@libraries/*": [ "libraries/*" ],
+      "@pgmodels": [ "repositories/pg" ]
+    }
   },
   "exclude": [
     "src/**/*.test.ts",
