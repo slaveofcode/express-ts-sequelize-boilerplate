@@ -77,7 +77,11 @@ See the example of using models on `src/controllers/UserController.ts' for faste
 
 ### Seeds Commands
 
-- `run:seed`: Create new seeder
+- `new:seed`: Create new seeder
+
+  > npm run new:seed initial-user
+
+- `run:seed`: Run all seeders
 
   > npm run run:seed
 
@@ -85,9 +89,9 @@ See the example of using models on `src/controllers/UserController.ts' for faste
 
   > npm run run:seed:undo
 
-- `run:seed:undo:all`: Undo all the seeds
+- `run:seed:undo-all`: Undo all the seeds
 
-  > npm run run:seed:undo:all
+  > npm run run:seed:undo-all
 
 
 ## Code Generator
