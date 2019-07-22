@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  'config': path.resolve('bootstrap', 'sequelize', 'db.json'),
+  'config': path.resolve('bootstrap', 'sequelize', 'db.js'),
   'seeders-path': path.resolve('bootstrap', 'sequelize', 'seeders'),
   'migrations-path': path.resolve('bootstrap', 'sequelize', 'migrations')
 }
