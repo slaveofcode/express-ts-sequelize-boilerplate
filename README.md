@@ -12,9 +12,13 @@ Simply clone this repository and running `npm i` to get all dependencies install
 
 ### Build
 
-Get ready for prodiction? run command below to compile the script.
+Get ready for production? run command below to transpile targeting commonjs script.
 
 > npm run build
+
+Start the transpiled script 
+
+> npm start
 
 ### Lint via tslint
 
@@ -104,7 +108,7 @@ Example Command
 
 The command above will generate new controller file called `AuthController.ts` with setup api endpoint to `api/auth`.
 
-You can create more template like this with different options and purpose to boost up the productivity. See the template example on `generator/controller/new` directory and visit [http://www.hygen.io/generators](http://www.hygen.io/generators) for further possibility.
+You can create more template like this with different options and purpose tost up the productivity. See the template example on `generator/controller/new` directory and visit [http://www.hygen.io/generators](http://www.hygen.io/generators) for further possibility.
 
 # License
 
