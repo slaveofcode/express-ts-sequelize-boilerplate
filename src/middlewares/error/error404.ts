@@ -1,6 +1,6 @@
 import { NOT_FOUND } from 'http-status-codes';
 import { Request, Response } from 'express';
-import ErrorResponse from '../interfaces/responses/ErrorResponse';
+import ErrorResponse from '@interfaces/responses/ErrorResponse';
 
 const error404 = (req: Request, res: Response, next: any): void => {
   const response = {

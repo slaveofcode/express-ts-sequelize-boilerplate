@@ -5,9 +5,9 @@ import compression from 'compression';
 import { Server } from '@overnightjs/core';
 import { Logger } from '@overnightjs/logger';
 import { UserController } from './controllers/UserController';
-import consoleLogger from './middlewares/consoleLogger';
-import errorHandler from './middlewares/error';
-import error404Handler from './middlewares/error404';
+import consoleLogger from './middlewares/logger/consoleLogger';
+import errorHandler from './middlewares/error/error';
+import error404Handler from './middlewares/error/error404';
 
 export class App extends Server {
   constructor() {
