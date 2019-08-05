@@ -1,5 +1,5 @@
 ---
-to: src/repositories/pg/models/<%=h.capitalize(h.inflection.singularize(name))%>.model.ts
+to: src/repositories/pg/models/<%=h.inflection.classify(h.inflection.singularize(name))%>.model.ts
 ---
 import { Table, Column, Model, DataType } from 'sequelize-typescript';
 
@@ -8,7 +8,7 @@ import { Table, Column, Model, DataType } from 'sequelize-typescript';
   timestamps: true,
   paranoid: true,
 })
-export class <%=h.capitalize(h.inflection.singularize(name))%> extends Model<<%=h.capitalize(h.inflection.singularize(name))%>> {
+export class <%=h.inflection.classify(h.inflection.singularize(name))%> extends Model<<%=h.inflection.classify(h.inflection.singularize(name))%>> {
   @Column({
     type: DataType.STRING,
     allowNull: false,
