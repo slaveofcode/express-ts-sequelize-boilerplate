@@ -10,7 +10,11 @@ module.exports = {
       return queryInterface.createTable('users', { id: Sequelize.INTEGER });
     */
    return queryInterface.createTable('Users', {
-     id: Sequelize.INTEGER,
+    id: {
+      type: Sequelize.INTEGER, 
+      primaryKey: true, 
+      autoIncrement: true
+    },
      name: Sequelize.STRING,
      createdAt: Sequelize.DATE,
      updatedAt: Sequelize.DATE,

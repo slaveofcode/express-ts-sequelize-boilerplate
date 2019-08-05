@@ -48,7 +48,8 @@
       "@exceptions/*": [ "exceptions/*" ],
       "@repositories/*": [ "repositories/*" ],
       "@libraries/*": [ "libraries/*" ],
-      "@pgmodels": [ "repositories/pg" ]
+      "@pgmodels": [ "repositories/pg" ],
+      "@mixins/*": ["mixins/*"]
     },                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     "typeRoots": [

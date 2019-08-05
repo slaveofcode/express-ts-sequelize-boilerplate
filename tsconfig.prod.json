@@ -10,7 +10,8 @@
       "@exceptions/*": [ "exceptions/*" ],
       "@repositories/*": [ "repositories/*" ],
       "@libraries/*": [ "libraries/*" ],
-      "@pgmodels": [ "repositories/pg" ]
+      "@pgmodels": [ "repositories/pg" ],
+      "@mixins/*": ["mixins/*"]
     }
   },
   "exclude": [
