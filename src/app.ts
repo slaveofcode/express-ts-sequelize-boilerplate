@@ -2,6 +2,7 @@ import { static as StaticPublisher } from 'express';
 import path from 'path';
 import bodyParser from 'body-parser';
 import compression from 'compression';
+import cors from 'cors';
 import { Server } from '@overnightjs/core';
 import { Logger } from '@overnightjs/logger';
 import { UserController } from './controllers/UserController';
@@ -18,6 +19,7 @@ export class App extends Server {
     this.app.use(bodyParser.json());
     this.app.use(bodyParser.urlencoded({extended: true}));
     this.app.use(compression());
+    this.app.use(cors());
 
     this.setupStatics('/static');
     this.setupMiddlewares();
