@@ -23,19 +23,13 @@ export class <%= h.inflection.classify(name) %>Controller extends Mixin(CRUD) {
 
   @Get('')
   private async list_data(req: Request, res: Response) {
-    const listItems = await <%= h.inflection.classify(name) %>.findAll({
-      raw: true,
-    });
+    const listItems = await this.list();
     return res.status(OK).json(listItems);
   }
 
   @Get(':id')
   private async get_data(req: Request, res: Response) {
-    const item = await <%= h.inflection.classify(name) %>.findOne({
-      where: {
-        id: req.params.id,
-      },
-    });
+    const item = await this.get(req.params.id);
     return res.status(OK).json(item);
   }
 
