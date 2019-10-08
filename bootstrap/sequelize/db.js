@@ -1,17 +1,25 @@
 require('dotenv').config();
 module.exports = () => ({
   "development": {
-    "username": process.env.PG_USER || "avd",
-    "password": process.env.PG_PASS || "avd",
-    "database": process.env.PG_NAME || "tada_auth",
+    "username": process.env.PG_USER || "admin",
+    "password": process.env.PG_PASS || "admin",
+    "database": process.env.PG_NAME || "project_db",
+    "host": process.env.PG_HOST || "127.0.0.1",
+    "dialect": "postgres",
+    "timezone": "+07:00"
+  },
+  "staging": {
+    "username": process.env.PG_USER || "admin",
+    "password": process.env.PG_PASS || "admin",
+    "database": process.env.PG_NAME || "project_db",
     "host": process.env.PG_HOST || "127.0.0.1",
     "dialect": "postgres",
     "timezone": "+07:00"
   },
   "test": {
-    "username": process.env.PG_USER || "avd",
-    "password": process.env.PG_PASS || "avd",
-    "database": process.env.PG_NAME || "tada_auth_test",
+    "username": process.env.PG_USER || "admin",
+    "password": process.env.PG_PASS || "admin",
+    "database": process.env.PG_NAME || "project_db_test",
     "host": process.env.PG_HOST || "127.0.0.1",
     "dialect": "postgres",
     "timezone": "+07:00"
