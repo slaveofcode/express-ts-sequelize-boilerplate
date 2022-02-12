@@ -36,7 +36,7 @@
   "dependencies": {
     "@overnightjs/core": "^1.6.9",
     "@overnightjs/logger": "^1.1.9",
-    "ajv": "^6.10.2",
+    "ajv": "^6.12.3",
     "bcrypt": "^3.0.6",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
