@@ -65,7 +65,7 @@
     "sequelize-cli": "^5.5.0",
     "ts-node": "^8.3.0",
     "ts-node-register": "^1.0.0",
-    "tsconfig-paths": "^3.8.0",
+    "tsconfig-paths": "^3.10.1",
     "tslint": "^5.18.0",
     "typescript": "^3.5.3"
   }
